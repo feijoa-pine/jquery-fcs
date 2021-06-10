@@ -23,7 +23,7 @@ https://feijoa-pine.github.io/jquery-fcs/
 <button type="submit" class="fcs">submit</button>
 ```
 
-あとは、任意のタイミングで指定したクラスをjquery-fcsに登録するだけです。
+あとは、任意のタイミングで指定したクラスをjQuery-fcsに登録するだけです。
 
 ###### 例
 
