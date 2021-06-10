@@ -14,18 +14,40 @@ $(function()
     
     // エンターキーで入力フォームを移動するフォームエレメントのクラスを指定する
     $(document).fcs(".fcs");
+    
+    // 別のフォーカスグループ
+    $(document).fcs(".fcs2");
 });
         </script>
+        <style>
+            div {
+                display:        inline-block;
+                vertical-align: top;
+                padding:        40px;
+            }
+        </style>  
     </head>
     <body>
-        <input type="text" class="fcs" id="first-element"><br>
-        <input type="text" class="fcs"><br>
-        <input type="text" class="other" value="フォーカスしないエレメント"><br>
-        <input type="text" class="fcs"><br>
-        <textarea class="fcs"></textarea><br>
-        <input type="text" class="fcs"><br>
-        <input type="text" class="fcs"><br>
-        <button type="button" class="fcs">button</button>
-        <button type="submit" class="fcs">submit</button>
+        <div id="group1">
+            <h2>forcus group 1</h2>
+            <input type="text" class="fcs" id="first-element"><br>
+            <input type="text" class="fcs"><br>
+            <input type="text" class="other" value="フォーカスしないエレメント"><br>
+            <input type="text" class="fcs"><br>
+            <textarea class="fcs"></textarea><br>
+            <input type="text" class="fcs"><br>
+            <input type="text" class="fcs"><br>
+            <button type="button" class="fcs">button</button>
+            <button type="submit" class="fcs">submit</button>
+        </div>
+        <div id="group2">
+            <h2>forcus group 2</h2>
+            <input type="text" class="fcs2"><br>
+            <input type="text" class="fcs2"><br>
+            <textarea class="fcs2"></textarea><br>
+            <input type="text" class="fcs2"><br>
+            <input type="text" class="fcs2"><br>
+            <button type="submit" class="fcs2">submit</button>
+        </div>
     </body>
 </html>
