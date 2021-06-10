@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery-fcsのサンプル</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./dist/jquery.fcs.min.js"></script>
+        <script>
+$(function()
+{
+    // 初期フォーカス
+    $("#first-element").focus();
+    
+    // エンターキーで入力フォームを移動するフォームエレメントのクラスを指定する
+    $(document).fcs(".fcs");
+});
+        </script>
+    </head>
+    <body>
+        <input type="text" class="fcs" id="first-element"><br>
+        <input type="text" class="fcs"><br>
+        <input type="text" class="other" value="フォーカスしないエレメント"><br>
+        <input type="text" class="fcs"><br>
+        <textarea class="fcs"></textarea><br>
+        <input type="text" class="fcs"><br>
+        <input type="text" class="fcs"><br>
+        <button type="button" class="fcs">button</button>
+        <button type="submit" class="fcs">submit</button>
+    </body>
+</html>
